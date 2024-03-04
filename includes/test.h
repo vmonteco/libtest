@@ -6,7 +6,7 @@
 /*   By: vmonteco </var/spool/mail/vmonteco>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 21:45:20 by vmonteco          #+#    #+#             */
-/*   Updated: 2024/03/04 23:46:38 by vmonteco         ###   ########.fr       */
+/*   Updated: 2024/03/05 00:23:05 by vmonteco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
  */
 
 #include <stdio.h>
+#include <stddef.h>
 
 /*
  *		Colors :
@@ -40,8 +41,8 @@ int		tests_success = 0;
 
 void	print_single_result(int res, int *local_tests_ran, int *local_tests_success);
 void	print_section_result(char *name, int tests_ran, int tests_success);
-void	print_main_result(char *name);
-char	*capture_fd();
-void	inject_to_fd();
+void	print_main_result(void);
+char	*capture_fd(void);
+void	inject_to_fd(void);
 
 #endif
