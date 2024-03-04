@@ -6,17 +6,17 @@
 #    By: vmonteco </var/spool/mail/vmonteco>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/04 21:23:56 by vmonteco          #+#    #+#              #
-#    Updated: 2024/03/04 23:42:45 by vmonteco         ###   ########.fr        #
+#    Updated: 2024/03/04 23:46:06 by vmonteco         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
 NAME =				libtest.a
 
-CC =				gcc
-CFLAGS =			-Wall -Werror -Wextra
-
 INCLUDES_DIR =		includes
 SRC_DIR =			src
+
+CC =				gcc
+CFLAGS =			-Wall -Werror -Wextra -I $(INCLUDES_DIR)
 
 SRC_FILES =			print_single_result.c \
 					print_section_result.c \

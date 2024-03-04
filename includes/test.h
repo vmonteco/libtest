@@ -6,12 +6,18 @@
 /*   By: vmonteco </var/spool/mail/vmonteco>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 21:45:20 by vmonteco          #+#    #+#             */
-/*   Updated: 2024/03/04 23:22:32 by vmonteco         ###   ########.fr       */
+/*   Updated: 2024/03/04 23:46:38 by vmonteco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef TEST_H
 # define TEST_H
+
+/*
+ *		Includes :
+ */
+
+#include <stdio.h>
 
 /*
  *		Colors :
