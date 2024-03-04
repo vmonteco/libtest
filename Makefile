@@ -6,11 +6,14 @@
 #    By: vmonteco </var/spool/mail/vmonteco>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/04 21:23:56 by vmonteco          #+#    #+#              #
-#    Updated: 2024/03/04 21:33:37 by vmonteco         ###   ########.fr        #
+#    Updated: 2024/03/04 21:37:51 by vmonteco         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
 NAME =				libtest.a
+
+CC =				gcc
+CFLAGS =			-Wall -Werror -Wextra
 
 INCLUDES_DIR =		includes
 SRC_DIR =			src
