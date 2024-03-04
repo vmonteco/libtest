@@ -6,7 +6,7 @@
 #    By: vmonteco </var/spool/mail/vmonteco>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/04 21:23:56 by vmonteco          #+#    #+#              #
-#    Updated: 2024/03/04 21:37:51 by vmonteco         ###   ########.fr        #
+#    Updated: 2024/03/04 23:42:45 by vmonteco         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -18,7 +18,11 @@ CFLAGS =			-Wall -Werror -Wextra
 INCLUDES_DIR =		includes
 SRC_DIR =			src
 
-SRC_FILES =			
+SRC_FILES =			print_single_result.c \
+					print_section_result.c \
+					print_main_result.c \
+					capture_fd.c \
+					inject_to_fd.c
 INCLUDES_FILES =	test.h
 
 SRC =				$(addprefix $(SRC_DIR)/,$(SRC_FILES))
