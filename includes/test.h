@@ -20,6 +20,9 @@
 # include <stdio.h>
 # include <stddef.h>
 # include <string.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <errno.h>
 
 /*
  *		Colors :
@@ -49,7 +52,7 @@ int		tests_success = 0;
 void	print_single_result(int res, int *local_tests_ran, int *local_tests_success);
 void	print_section_result(char *name, int tests_ran, int tests_success);
 void	print_main_result(void);
-char	*capture_fd(void);
+char	*capture_fd(int fd);
 void	inject_to_fd(void);
 
 #endif

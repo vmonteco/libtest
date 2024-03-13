@@ -14,10 +14,9 @@
 
 
 
-char	*capture_fd(int fd, )
+char	*capture_fd(int fd)
 {
   char		*result;
-  char		*tmp;
   char		buffer[BUFFER_SIZE + 1];
   ssize_t	chars_read;
 
@@ -33,7 +32,7 @@ char	*capture_fd(int fd, )
 
   while ((chars_read = read(fd, buffer, BUFFER_SIZE)) > 0)
     {
-      if ((result = realloc(strlen(result) + chars_read + 1)) == NULL){
+      if ((result = realloc(result, strlen(result) + chars_read + 1)) == NULL){
 	free(result);
 	printf("[libtest>capture_fd]: Error while reallocation for result str:\n%s (errno: %d)\n", strerror(errno), errno);
 	return NULL;
@@ -42,7 +41,7 @@ char	*capture_fd(int fd, )
       strcat(result, buffer);
       if (chars_read != BUFFER_SIZE) /* We finished the read but still have new chars */
 	{
-	  return 
+	  return result;
 	}
     }
   if (chars_read == -1){ /* Error case */
